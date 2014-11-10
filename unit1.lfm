@@ -1,0 +1,98 @@
+object Form1: TForm1
+  Left = 283
+  Height = 469
+  Top = 116
+  Width = 593
+  Caption = 'Form1'
+  ClientHeight = 469
+  ClientWidth = 593
+  LCLVersion = '1.2.4.0'
+  object Edit1: TEdit
+    Left = 8
+    Height = 22
+    Top = 16
+    Width = 576
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 15
+    Top = 72
+    Width = 176
+    Caption = 'Count characters in text'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 192
+    Height = 15
+    Top = 72
+    Width = 232
+    Caption = 'convert every space to a star character'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 8
+    Height = 15
+    Top = 96
+    Width = 176
+    Caption = 'Count numbers in text'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 432
+    Height = 15
+    Top = 96
+    Width = 152
+    Caption = 'ASCII table'
+    OnClick = Button4Click
+    TabOrder = 4
+  end
+  object Button5: TButton
+    Left = 432
+    Height = 15
+    Top = 72
+    Width = 152
+    Caption = 'Cypher'
+    OnClick = Button5Click
+    TabOrder = 5
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 330
+    Top = 120
+    Width = 576
+    Lines.Strings = (
+      'Memo1'
+    )
+    ScrollBars = ssVertical
+    TabOrder = 6
+  end
+  object Button6: TButton
+    Left = 192
+    Height = 10
+    Top = 48
+    Width = 232
+    Caption = 'Clear Memo'
+    OnClick = Button6Click
+    TabOrder = 7
+  end
+  object Button7: TButton
+    Left = 192
+    Height = 15
+    Top = 96
+    Width = 232
+    Caption = 'count numbers,upper/lowercase letters,spaces'
+    OnClick = Button7Click
+    TabOrder = 8
+  end
+  object Edit2: TEdit
+    Left = 440
+    Height = 22
+    Top = 48
+    Width = 136
+    TabOrder = 9
+  end
+end
