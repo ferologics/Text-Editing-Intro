@@ -74,10 +74,8 @@ end;
 procedure TForm1.Button3Click(Sender: TObject);
 begin
   num:= 0;
-  bigCh:= 0;
-  smallCh:= 0;
-  space:= 0;
   str:= Form1.Edit1.Text;
+
   for i:= 0 to length(str) do
       begin
         ch:= str[i];
@@ -99,14 +97,13 @@ begin
   str:= Form1.Edit1.Text;
   offset:= StrToInt(Form1.Edit2.Text);
 
-  {for i:=0 to length(str) do
-      begin
-        ch:= str[i];
-        str[i]:= char(ord(ch) + offset);
-
+  for i:=0 to length(str) do
+      ch:= str[i];
+      case ord(ch) of
+           32..126: str[i]:= char( (ord(ch) + offset) );
       end;
-  }
-  Form1.Memo1.Lines.Add(str + IntToStr(offset));
+
+  Form1.Memo1.Lines.Add(str);
         {case ch of
              char(32)..char(126): // 32 zacina ' ' a 126 konci ~
                begin
